@@ -1,5 +1,18 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Work+Sans:wght@400;500;600;700&display=swap");
+
 /* css variables */
-:root {};
+:root {
+  --primary-color: #562eff;
+  --secondary-color: #000;
+  --white-color: #fff;
+  --gray-color: #9f9f9f;
+  --orange-color: #ed6b4f;
+  --orangered-color: #ff4a60;
+  --yellow-color: #ffc014;
+  --bg-deep-purple: #562eff;
+  --bg-light-purple: #f3f1ff;
+}
 
 /* utilities */
 * {
@@ -14,16 +27,23 @@ html {
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  background-color: var(--bg-light-purple);
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 870px;
   height: 100%;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 10px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Work Sans", sans-serif;
 }
 
 ul li {
@@ -33,13 +53,56 @@ ul li {
 a {
   text-decoration: none;
   transition: 200ms;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 img {
   width: 100%;
   height: auto;
-  display: block;
+  display: inline-block;
 }
+
+/* header section starts */
+header {
+  width: 100%;
+  background-color: var(--bg-deep-purple);
+  margin-bottom: 36px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 16px;
+}
+
+.logo span,
+.nav-links .list-item a {
+  color: var(--white-color);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links .list-item {
+  margin-left: 36px;
+}
+
+/* header section ends */
 
 /*
 font-family: fira code, fira sans, fancy slider, cursive, satisfy, monospace, open sans, rubik, poppins, fantasy;
