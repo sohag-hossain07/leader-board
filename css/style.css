@@ -34,7 +34,8 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: var(--bg-light-purple);
+  /* background-color: var(--bg-light-purple); */
+  overflow-x: hidden;
 }
 
 .container {
@@ -89,14 +90,8 @@ img {
 header {
   width: 100%;
   background-color: var(--bg-deep-purple);
-  margin-bottom: 36px;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 18px 0;
+  margin-bottom: 6px;
+  position: relative;
 }
 
 .logo {
@@ -110,18 +105,8 @@ header {
   margin-right: 16px;
 }
 
-.logo span,
-.nav-links .list-item a {
+.logo > span {
   color: var(--white-color);
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-}
-
-.nav-links .list-item {
-  margin-left: 36px;
 }
 
 /* header section ends */
@@ -156,8 +141,9 @@ header {
 }
 
 .blog {
-  display: flex;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 177px 1fr;
+  gap: 16px;
 }
 
 .blog-title {
@@ -168,7 +154,6 @@ header {
 
 .blog a {
   max-width: 177px;
-  margin-right: 16px;
 }
 
 .title-and-author p > a {
